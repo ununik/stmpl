@@ -5,10 +5,8 @@
  * Date: 19. 7. 2015
  * Time: 6:16
  */
-$dbInfo = "mysql:host=localhost;dbname=stmpl";
-$dbUser = "root";
-$dbPassword = "";
-$db = new PDO( $dbInfo, $dbUser, $dbPassword );
+
+$db = new PDO('mysql:host=localhost;dbname=stmpl', 'root', '');
 $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 $title = null;
 
