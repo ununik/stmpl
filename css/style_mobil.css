@@ -1,0 +1,367 @@
+a img{
+    border: none;
+}
+.areal_nadpis{
+    background-color: #cd1d1d;
+    margin: 0px;
+    padding: 10px 13px;
+    color: white;
+    float:none;
+    width: 100%;
+    border-bottom:5px solid black;
+    position:relative;
+    top:1px;
+}
+.plan_trati{
+    padding: 0px;
+    height: auto;
+    margin: 0px 8px 0px 8px;
+    font-weight: bold;
+}
+.plan_trati tr{
+    display: inline-table;
+    margin: 2px 8px;
+}
+.plan_trati td{
+    padding: 5px 10px;
+}
+#foto_z_trati{
+    margin-top: 50px;
+    float:none;
+    width: 100%;
+}
+#foto_z_trati h2{
+    background-color: #cd1d1d;
+    margin: 0px;
+    padding: 10px 13px;
+    color: white;
+}
+#foto_ze_strelnice{
+    margin-top: 50px;
+    float:none;
+    width: 100%;
+}
+#foto_ze_strelnice h2{
+    background-color: #cd1d1d;
+    margin: 0px;
+    padding: 10px 13px;
+    color: white;
+}
+#foto_ze_strelnice img{
+    display: inline-block;
+    text-align: center;
+    width:185px;
+    margin: 4px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;;
+}
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+textarea{
+    height: 650px;
+}
+#contentHomeAll{
+    position:relative;
+    top: 0px;
+}
+#plan_trati{
+    float: none;
+    width: 100%;
+}
+.clen_div{
+    width: 100%;
+    display: inline-block;
+    margin: 0px 25px 10px 0px;
+    vertical-align: top;
+}
+.clen_div h2{
+    background-color: #cd1d1d;
+    margin: 0px;
+    padding: 10px 13px;
+    color: white;
+}
+.clen_div img{
+    width: 200px;
+    display: inline-block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    float: right;
+    margin: 10px 5px 5px 10px;
+}
+.clen_div div{
+    display: inline-block;
+    margin: 10px 8px;
+}
+.clen_uprava{
+    font-size: 11px;
+    float:right;
+    position:relative;
+    top:-5px;
+    line-height: 19px;
+}
+.clen_uprava a{
+    color:white;
+    text-decoration: none;
+}
+.clen_uprava a:hover{
+    text-decoration: underline;
+}
+.input_clenove{
+    width: 260px;
+    height: 20px;
+    outline-color: #cd1d1d;
+}
+.submit_clenove{
+    color: white;
+    background-color: #cd1d1d;
+    border:none;
+    outline: none;
+    width: 90px;
+    height: 20px;
+    float: right;
+    border-radius: 5px;
+
+}
+iframe{
+    border:none;
+}
+.submit_entry{
+    color: white;
+    background-color: #cd1d1d;
+    border:none;
+    outline: none;
+    width: 90px;
+    height: 20px;
+    flaot:left;
+    border-radius: 5px;
+    margin: 10px 40px;
+
+}
+.submit_entry:hover {
+    background-color: #be1212;
+}
+#nadpis_entry{
+    margin: 0px;
+    color: white;
+    padding: 4px 10px 4px 10px;
+    background-color:#cd1d1d;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 25px;
+}
+#nadpis_entry input{
+    border:none;
+    outline: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 28px;
+    color: white;
+    width: 800px;
+}
+.submit_clenove:hover {
+    background-color: #be1212;
+}
+#facebook{
+     display: none;
+     width: 100%;
+     float: left;
+}
+#facebook iframe{
+    margin: 0px auto;
+    width: 92%;
+}
+#facebook h2{
+    background-color: #cd1d1d;
+    margin: 0px;
+    padding: 10px 13px;
+    position: relative;
+    top: 1px;
+    color: white;
+    margin-left: 1px;
+}
+#male_logo{
+    height: 35px;
+    float:none;
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+#footer{
+    background-color: #cd1d1d;
+    position:relative;
+    top: 45px;
+    padding: 19px 0px;
+    clear: both;
+    text-align:center;
+}
+#footer img{
+    margin: 0px 15px;
+}
+#footer img:hover{
+    background-color: #be1212;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.home_entry_div{
+    width: 100%;
+    padding: 0px 0px 5px 0px;
+    background-color: #fae8e8;
+}
+.home_entry_div h1{
+    margin: 0px;
+    color: white;
+    padding: 5px 13px 5px 13px;
+    background-color:#cd1d1d;
+    position:relative;
+    z-index: 600;
+}
+.home_entry_div_text{
+    width: 92%;
+    margin: 0px 15px;
+}
+.home_entry_pokracovani{
+    display: block;
+    margin: 10px 0px 10px 40px;
+    color: white;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    padding: 7px 14px 2px 14px;
+    text-decoration: none;
+}
+.home_entry_div_text h1{
+    font-height: 90%;
+    color: black;
+    background-color: transparent;
+}
+#header_all{
+    padding: 5px 20px;
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    text-align: right;
+}
+#header_home{
+    display:none;
+}
+#headerbox{
+    height: 100px;
+    width: 100%;
+    position: relative;
+    top:0px;
+    background-color: black;
+    color:white;
+    text-align:right;
+    z-index: 10;
+    border-bottom: 1px solid black;
+}
+#headerbox h1{
+    text-align:center;
+    font-size: 21px;
+}
+#headerbox h2{
+    font-size: 19px;
+    text-align: center;
+}
+#home_content{
+    width: 100%;
+    float: none;
+    margin-top: 180px;
+}
+#home_content iframe{
+    width: 80%;
+}
+iframe{
+    width: 80%;
+}
+#content h1{
+    margin: 10px 0px 25px 0px;
+}
+.iframe{
+    float: none;
+    width: 100%;
+}
+#nav{
+    height: 44px;
+    overflow: hidden;
+    background-color: #cd1d1d;
+    border-bottom: solid black 1px;
+    position:relative;
+    z-index: 350;
+}
+#nav:hover{
+    height: 250px;
+}
+#nav a{
+    color:white;
+    width: auto;
+    font-weight:bold;
+    font-size: 16px;
+    display:block;
+    padding:13px 42px;
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+    position:relative;
+    z-index: 200;
+    text-align:center;
+
+}
+#nav div{
+    color:white;
+    width: 90px;
+    font-weight:bold;
+    font-size: 16px;
+    display:block;
+    padding:13px 42px;
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+    position:relative;
+    z-index: 200;
+}
+#nav a:active{
+    background-color: #ed0d0d;
+}
+#nav a:hover{
+    background-color: #be1212;
+}
+#nav a:hover .subpage{
+    display:block;
+}
+#nav #menu_nadpis img{
+    margin-left: 10px;
+}
+#kontakt_frantisek{
+    float:left;
+    height: 10em;
+    margin: 10px 25px 15px 0px;
+    border-radius: 5px;
+}
+#photoboxAll{
+    display: none;
+}
+.fotogalerie_blok{
+    width: 100%;
+    display: inline-block;
+    margin: 0px 25px 10px 0px;
+    vertical-align: top;
+}
+.fotogalerie_blok h2 {
+    background-color: #cd1d1d;
+    margin: 0px;
+    padding: 10px 13px;
+    color: white;
+}
+#sponzori{
+    width: 100%;
+}
