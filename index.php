@@ -28,7 +28,7 @@ $data->setNavigation(include_once("controllers/navigation.php"));
 if($getPage == "home"){
     $data->setHeader("<div id='header_home'><div><h1>Biatlon v srdci České Kanady</h1></div></div><div id='headerbox'>
                       <h1>Klub biatlonu<br>Staré Město pod Landštejnem</h1>
-                      <h2>klub České Kanady</h2>
+                      <h2>klub ze srdce České Kanady</h2>
                       <div id='photoBoxAll'></div>
                       </div>");
 }else{
