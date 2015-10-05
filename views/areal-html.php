@@ -7,7 +7,7 @@
  */
 
 return "<h1>Areál</h1>
-        <p>Klub biatlonu Staré Město pod Landštejnem má jedinečnou tréningovou lokalitu - střelnici s běžeckými okruhy pod hrází vodní nádrže Landštejn.</p>
+        <p>Klub biatlonu Staré Město pod Landštejnem má jedinečnou tréninkovou lokalitu - střelnici s běžeckými okruhy pod hrází vodní nádrže Landštejn.</p>
         <p>GPS: <strong>N:49.018282 E:15.244692</strong></p>
         <h2 class='areal_nadpis'>Plán tratí</h2>
         <img src='images/areal/trate.png' id='plan_trati'>

@@ -6,7 +6,8 @@
  * Time: 9:47
  */
 session_start();
-$db = new PDO('mysql:host=localhost;dbname=ununik', 'ununik', 'am4qgx');
+error_reporting(E_ALL);
+$db = new PDO('mysql:host=localhost;dbname=stmpl', 'ununik', 'Unununium111');
 $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 $title = null;
 function __autoload($name){

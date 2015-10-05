@@ -11,7 +11,7 @@ function vytvoritZadostK (url, idInFolder, name, title, href, text, add) {
         http_zadost = new XMLHttpRequest();
         if (http_zadost.overrideMimeType) {
             http_zadost.overrideMimeType('text/xml');
-            // Podívejte na poznámku o tomto øádku ní¾e
+            // Podï¿½vejte na poznï¿½mku o tomto ï¿½ï¿½dku nï¿½e
         }
     } else if (window.ActiveXObject) { // Internet Explorer
         try {
@@ -24,7 +24,7 @@ function vytvoritZadostK (url, idInFolder, name, title, href, text, add) {
     }
 
     if (!http_zadost) {
-        alert('Giving up :( Nemohu vytvoøit XMLHTTP instanci');
+        alert('Giving up :( Nemohu vytvoï¿½it XMLHTTP instanci');
         return false;
     }
     http_zadost.onreadystatechange = function() { stavObsahuK(http_zadost, name, title, href, text, add); };
@@ -44,7 +44,7 @@ function stavObsahuK(http_zadost, name, title, href, text, add) {
                 document.getElementById('photoBoxAll').innerHTML += http_zadost.responseText;
             }
         } else {
-            alert('Byl problém se ¾ádostí.');
+           // alert('Byl problÃ©m se Å¾Ã¡dostÃ­.');
         }
     }else{
         if(add == false){

@@ -1,6 +1,9 @@
 a img{
     border: none;
 }
+#content{
+    padding:  0px 10px 0px 10px;
+}
 .areal_nadpis{
     background-color: #cd1d1d;
     margin: 0px;
@@ -290,6 +293,9 @@ iframe{
     float: none;
     width: 100%;
 }
+#menu_nadpis{
+    display:block;
+}
 #nav{
     height: 44px;
     overflow: hidden;
@@ -297,9 +303,6 @@ iframe{
     border-bottom: solid black 1px;
     position:relative;
     z-index: 350;
-}
-#nav:hover{
-    height: 250px;
 }
 #nav a{
     color:white;

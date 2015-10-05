@@ -1,3 +1,10 @@
+#photoboxAll .eq{
+    display: none !important;
+}
+.eq{
+    color: white;
+    font-size: 0.8em;
+}
 body{
     font-family: 'Ubuntu', sans-serif;
 }
@@ -194,6 +201,7 @@ iframe{
     margin-top: 50px;
     width: 450px;
     float: left;
+    clear: left;
 }
 #sponzori h2{
     background-color: #cd1d1d;

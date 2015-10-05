@@ -5,7 +5,7 @@
  * Date: 19. 7. 2015
  * Time: 6:16
  */
-$db = new PDO('mysql:host=localhost;dbname=ununik', 'ununik', 'am4qgx');
+$db = new PDO('mysql:host=localhost;dbname=stmpl', 'ununik', 'Unununium111');
 $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 $title = null;
 

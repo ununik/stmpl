@@ -6,7 +6,7 @@
  * Time: 18:41
  */
 
-$navigation = "";
+$navigation = "<div id='menu_nadpis' onclick='showANDhideMenu(this)'>MENU <img src='images/header/menu_img.png'></div>";
 $navigation .= "<a href='admin.php?page=home'>Domů</a>";
 $navigation .= "<a href='admin.php?page=clenove'>Členové</a>";
 
