@@ -11,6 +11,9 @@ body{
 a img{
     border: none;
 }
+.entry-h1{
+    text-decoration: underline;
+}
 .areal_nadpis{
     background-color: #cd1d1d;
     margin: 0px;
