@@ -5,6 +5,7 @@
  * Date: 9. 8. 2015
  * Time: 8:28
  */
+$www = "";
 $title = 'Archiv | Staré Město pod Landštejnem';
 $entries = new Database($db);
 $entries = $entries->getAllEntries();
