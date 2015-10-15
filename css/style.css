@@ -479,5 +479,6 @@ iframe{
     margin: 10px;
 }
 .sponzor img{
-    height: 100px;
+    max-height: 100px;
+    max-width: 100%;
 }
