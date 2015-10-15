@@ -108,10 +108,10 @@ class Database
         }
         return $statement;
     }
-    public function addMember($jmeno, $prijmeni, $narozeni, $image){
+    public function addMember($jmeno, $prijmeni, $narozeni, $image, $text){
         $timestamp = time();
-        $entrySQL = "INSERT INTO clenove ( jmeno, prijmeni, narozeni_timestamp, timestamp, profil_image )
-                     VALUES ( '$jmeno', '$prijmeni', '$narozeni', '$timestamp', '$image' )";
+        $entrySQL = "INSERT INTO clenove ( jmeno, prijmeni, narozeni_timestamp, timestamp, profil_image, text )
+                     VALUES ( '$jmeno', '$prijmeni', '$narozeni', '$timestamp', '$image', '$text' )";
         $entryStatement = $this->db->prepare( $entrySQL );
 
         try{
@@ -204,10 +204,11 @@ class Database
         }
         return $statement;
     }
-    public function updateMember($id, $jmeno, $prijmeni, $narozeni, $image){
+    public function updateMember($id, $jmeno, $prijmeni, $narozeni, $image, $text){
         $entrySQL = "UPDATE `clenove` SET `jmeno`='$jmeno',
                                           `prijmeni`='$prijmeni',
                                           `narozeni_timestamp`='$narozeni',
+                                          `text`='$text',
                                           `profil_image`='$image'
 
                                           WHERE id='$id'";

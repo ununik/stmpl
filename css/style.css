@@ -109,6 +109,10 @@ textarea{
 .home_uprava{
     float:right;
 }
+.clen_text{
+    display: block;
+    font-size: 0.95em;
+}
 .clen_uprava{
     float:right;
     position:relative;
@@ -134,6 +138,11 @@ textarea{
 .input_clenove{
     width: 260px;
     height: 20px;
+    outline-color: #cd1d1d;
+}
+.input_textarea{
+    width: 260px;
+    height: 250px;
     outline-color: #cd1d1d;
 }
 .submit_clenove{

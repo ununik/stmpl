@@ -12,6 +12,7 @@ $jmeno = "";
 $prijmeni = "";
 $narozeni = "";
 $imageName = "";
+$text = "";
 if(isset($_POST['jmeno'])){
     if($_POST['jmeno']!=""){
         $jmeno = addslashes(strip_tags($_POST['jmeno']));
@@ -24,7 +25,7 @@ if(isset($_POST['jmeno'])){
         $err .= "Není vyplněné příjmení!";
     }
     $narozeni = addslashes(strip_tags($_POST['narozeni']));
-
+    $text = addslashes(strip_tags($_POST['text']));
     if ($_FILES['image']['name'] != "") {
         if ($_FILES['image']['error'] == "") {
             $image = $_FILES['image'];
@@ -58,12 +59,14 @@ if(isset($_POST['jmeno'])){
     if($err == ""){
         $narozeni = strtotime($narozeni);
 
+
         $input = new Database($db);
-        $input->addMember($jmeno, $prijmeni, $narozeni, $imageName);
+        $input->addMember($jmeno, $prijmeni, $narozeni, $imageName, $text);
         $err = "";
         $jmeno = "";
         $prijmeni = "";
         $narozeni = "";
+        $text = "";
     }
 }
 $members = new Database($db);

@@ -13,6 +13,7 @@ $err = "";
 $jmeno = $data_clen->jmeno;
 $prijmeni = $data_clen->prijmeni;
 $narozeni = date('Y-m-d', $data_clen->narozeni_timestamp);
+$text = $data_clen->text;
 if($data_clen->profil_image != ""){
     $picture = "<img src='images/clenove/200/{$data_clen->profil_image}'><br>";
 }else{
@@ -32,6 +33,7 @@ if(isset($_POST['jmeno'])){
         $prijmeni = "";
     }
     $narozeni = addslashes(strip_tags($_POST['narozeni']));
+    $text = addslashes(strip_tags($_POST['text']));
     $narozeni = strtotime($narozeni);
     if ($_FILES['image']['name'] != "") {
         if ($_FILES['image']['error'] == "") {
@@ -68,7 +70,7 @@ if(isset($_POST['jmeno'])){
     if($err == ""){
 
         $input = new Database($db);
-        $input->updateMember($_GET['id'], $jmeno, $prijmeni, $narozeni, $imageName);
+        $input->updateMember($_GET['id'], $jmeno, $prijmeni, $narozeni, $imageName, $text);
         header("location: admin.php?page=clenove");
     }
 }
