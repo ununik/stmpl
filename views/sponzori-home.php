@@ -15,5 +15,11 @@ return "<div id='sponzori'><h2>Sponzoři</h2>
         <a href='http://www.ave.cz/' target='_blank' class='sponzor' title='AVE'><img alt='AVE' src='/images/sponzori/ave.png'></a>
         <a href='http://www.csas.cz/' target='_blank' class='sponzor' title='Česká spořitelna'><img  alt='Česká spořitelna' src='/images/sponzori/ceska_sporitelna.gif'></a>
         <a href='http://www.wspk.cz/' target='_blank' class='sponzor' title='SPARKASSE'><img  alt='SPARKASSE' src='/images/sponzori/sparkasse.jpg'></a>
+        <a href='http://zc.cz/' target='_blank' class='sponzor' title='ZC'><img  alt='ZC' src='/images/sponzori/zc.jpg'></a>
+        <a href='http://www.mes-jh.cz/' target='_blank' class='sponzor' title='MEŠ'><img  alt='MEŠ' src='/images/sponzori/mes.jpg'></a>
+        <a href='http://www.cyklocamp.cz/' target='_blank' class='sponzor' title='Cyklocamp pod Landštejnem'><img  alt='Cyklocamp pod Landštejnem' src='/images/sponzori/cyklocamp.png'></a>
+        <a class='sponzor' title='Kovozámečnictví Geisler'><img  alt='Kovozámečnictví Geisler' src='/images/sponzori/geisler.jpg'></a>
+
+
 
 </div>";
