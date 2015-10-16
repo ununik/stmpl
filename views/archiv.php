@@ -8,7 +8,7 @@
     $cont = '<h1>Archiv</h1>';
 while ( $entry = $entries->fetchObject() ){
     $cont .= "<div class='home_entry_div'><h1>{$entry->nadpis}</h1>
-        <div class='home_entry_div_text'>{$entry->text} <a href='index.php?page=entry&id={$entry->id}' class='home_entry_pokracovani'>Pokračování</a></div>";
+        <div class='home_entry_div_text'>{$entry->text} <a href='/clanek/{$entry->id}' class='home_entry_pokracovani'>Pokračování</a></div>";
     $cont .=  "<div class='fb-like'
                         data-href='{$www}index.php?page=entry&id={$entry->id}'
                         data-layout='standard'

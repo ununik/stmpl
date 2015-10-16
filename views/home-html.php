@@ -7,7 +7,7 @@
  */
 while ( $entry = $entries->fetchObject() ){
     $allEntries .= "<div class='home_entry_div'><h1>{$entry->nadpis}</h1>
-        <div class='home_entry_div_text'>{$entry->text} <a href='index.php?page=entry&id={$entry->id}' class='home_entry_pokracovani'>Pokračování</a></div>";
+        <div class='home_entry_div_text'>{$entry->text} <a href='/clanek/{$entry->id}' class='home_entry_pokracovani'>Pokračování</a></div>";
 
 
   $allEntries .= "<div class='fb-like'
