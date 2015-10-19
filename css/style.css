@@ -507,4 +507,5 @@ iframe{
     width: 970px;
     display: block;
     float: right;
+    text-align: justify;
 }

@@ -69,7 +69,7 @@ $container .= "</ul>";
 
 
         $obleceni_zima = "<div id='obleceni_zima'>";
-        $obleceni_zima .= "<h2>lyžařské oblečení</h2>";
+        $obleceni_zima .= "<h2>Lyžařské oblečení</h2>";
 
         $obleceni_zima .= "</div>";
 
@@ -98,13 +98,26 @@ $container .= "</ul>";
         $zbrane_malorazka = "<div id='zbrane_malorazka'>";
         $zbrane_malorazka .= "<h2>Malorážka</h2>";
         $zbrane_malorazka .= "<p>V biatlonu se používá více typů malorážek.</p>
-                                <p>Nejpoužívanější zbraní je německá <strong>Anschütz 1827</strong> v různých variantách. Její největší předností je hlaveň ze speciální slitiny, která má minimální změny rozměrů při různých teplotách.</p>";
+                                <p>Nejpoužívanější zbraní je německá <strong>Anschütz 1827</strong> v různých variantách. Její největší předností je hlaveň ze speciální slitiny, která má minimální změny rozměrů při různých teplotách.
+                                Pro vyhození a následné nabití stačí jednoduchý a přímý pohyb ukazováčku směrem k obličeji a následné zatlačení otevřeného závěru palcem opačným směrem.
+                                Nevýhodou této zbraně je její citlivost na znečištění (zbraň poměrně snadno podléhá korozi, může dojít k \"zaseknutí\" závěru kvůli znečištění nebo přimrznutí (voda se dostane mezi ložiska závěru a tam zamrzne - nestává se to nijak často)</p>
+                                <p>video rozborka a sborka</p>";
+    $zbrane_malorazka .= "<p>Další užívanou zbraní je ruská <strong>Izhmash BI-7</strong>. Tato zbraň je vytvořená tak, aby byla co nejsnazší na údržbu, proto i samotný mechanizmus je oproti německé zbrani velice jednoduchý
+                           Postup při nabíjení je velmi podobný s Anschütz s tím rozdílem, že se nenabíjí v přímém směru dozadu, ale \"vylamuje\" se raménko závěru.
+                           Tato zbraň má pojistku, která nedovolí vystřelit, pokud není zásobník v komoře.</p>
+                           <p>video rozborka a sborka</p>";
         $zbrane_malorazka .= "</div>";
+
+
 
 
         $zbrane_doplnky = "<div id='zbrane_doplnky'>";
         $zbrane_doplnky .= "<h2>Doplňky ke zbraním</h2>";
-
+        $zbrane_doplnky .= "<h3>Krytka oka</h3>";
+        $zbrane_doplnky .= "<p>Někteří lidé nedokáží mít zavřené levé oko při střelbě nebo hrozí, že bude sluníčko oslňovat oči, proto se ke zbrani dá přidělat krytka oka.</p>";
+        $zbrane_doplnky .= "<p>Tentyto návody jsou pro zbraně Anschütz, ale po menších úpravách lze použít i na jiný typ zbraně.</p>";
+        $zbrane_doplnky .= "<h4>Návod I (pouze na levé oko)</h4>";
+        $zbrane_doplnky .= "<h4>Návod II (krytka na obě oči)</h4>";
         $zbrane_doplnky .= "</div>";
 
 
