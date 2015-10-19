@@ -32,6 +32,7 @@ $container .= "</li>";
 $container .= "<li>Jiné";
 $container .= "<ul id='jine_menu_vybaveni'>
                     <li onclick='showVybaveniPage(\"jine_nastrel\")'>Nástřel</li>
+                    <li onclick='showVybaveniPage(\"jine_dalekohled\")'>Dalekohled</li>
                 </ul>";
 $container .= "</li>";
 $container .= "</ul>";
@@ -42,7 +43,8 @@ $container .= "</ul>";
 
         $obuv_leto = "<div id='obuv_leto'>";
         $obuv_leto .= "<h2>Běžecká obuv</h2>";
-
+        $obuv_leto .= "<p>Boty bychom si měli vybrat podle podkladu, na kterém budeme běhat. Pokud běháme především kros (terénní běhy), jako je tomu v letním biatlonu, je dobré mít hrubší vzorek podrášky. Běháme-li především na asfaltu nebo an zpevněných cestách, pak je příjemnější hladší podrážka. Je lepší mít 2 páry bot pro různé terény, než mít univerzální boty pro každý terén.</p>";
+        $obuv_leto .= "<hr><p><strong><u>Tip</u>:</strong> Boty na běhání by se měly vyměnit po 800km, proto je i dobré kupovat boty přesně na nohu (palec by se měl dotýkat špičky boty). Po pár trénincích se boty roztáhnou a teprve poté sedí dokonale na noze.</p>";
         $obuv_leto .= "</div>";
 
 
@@ -82,7 +84,7 @@ $container .= "</ul>";
 
         $hulky_zima = "<div id='hulky_zima'>";
         $hulky_zima .= "<h2>Hůlky</h2>";
-
+        $hulky_zima .= "<p>Hůlky se výbírají především podle výšky. Ideální výška hůlek pro klasiku je - od země po úroveň ramen.</p>";
         $hulky_zima .= "</div>";
 
 
@@ -132,6 +134,12 @@ $jine_nastrel .= "<h2>Vybavení pro nástřel</h2>";
 $jine_nastrel .= "</div>";
 
 
+$jine_dalekohled = "<div id='jine_dalekohled'>";
+$jine_dalekohled .= "<h2>Dalekohled</h2>";
+
+$jine_dalekohled .= "</div>";
+
+
 
 
 
@@ -147,6 +155,7 @@ $container .= $zbrane_vzduchovka;
 $container .= $zbrane_malorazka;
 $container .= $zbrane_doplnky;
 $container .= $jine_nastrel;
+$container .= $jine_dalekohled;
 $container .= "</div>";
 $container .= "<script>hideAllVybaveni()</script>";
 

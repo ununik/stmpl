@@ -7,7 +7,7 @@ function showANDhideMenu(div){
     }
 }
 function hideAllVybaveni(){
-    var pages = ["obuv_leto", "obleceni_leto", "obuv_zima", "obleceni_zima", "lyze_zima", "hulky_zima", "zbrane_vzduchovka", "zbrane_malorazka", "zbrane_doplnky", "jine_nastrel"];
+    var pages = ["obuv_leto", "obleceni_leto", "obuv_zima", "obleceni_zima", "lyze_zima", "hulky_zima", "zbrane_vzduchovka", "zbrane_malorazka", "zbrane_doplnky", "jine_nastrel", "jine_dalekohled"];
     for (var index = 0; index < pages.length; ++index) {
         document.getElementById(pages[index]).style.display = "none";
     }
