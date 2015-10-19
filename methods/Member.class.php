@@ -36,7 +36,7 @@ class Member
     }
     public function getProfilImage(){
         if(isset($this->profil_image) && $this->profil_image != ""){
-            return "<img src='images/clenove/200/$this->profil_image'>";
+            return "<a href='/images/clenove/700/$this->profil_image'  rel='lightbox[1]' title='{$this->getFullName()}'><img src='/images/clenove/200/$this->profil_image'></a>";
         }else{
             return "";
         }

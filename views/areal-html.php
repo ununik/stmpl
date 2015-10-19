@@ -8,6 +8,9 @@
 
 return "<h1>Areál</h1>
         <p>Klub biatlonu Staré Město pod Landštejnem má jedinečnou tréninkovou lokalitu - střelnici s běžeckými okruhy pod hrází vodní nádrže Landštejn.</p>
+        <p>Sřelnice je vybavena 25 mechanickými stavy na které je možno střílet dlouhými zbraněmi ráže .22 lr (na 50m) nebo vzduchovými puškami (na 10m).</p>
+        <p>V areálu se nachází 7 běžeckých okruhů s různou terenní obtížností.</p>
+        <p>V dosahu areálu je cyklostezka, vhodná k inline bruslení i jízdě na kolečkových lyžích.</p>
         <p>GPS: <strong>N:49.018282 E:15.244692</strong></p>
         <h2 class='areal_nadpis'>Plán tratí</h2>
         <img src='images/areal/trate.png' id='plan_trati'>

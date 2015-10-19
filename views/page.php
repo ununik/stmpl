@@ -19,7 +19,7 @@ return "
         <script src='/js/lightbox/js/lightbox.js'></script>
         <style>
  /* Active navigation link */
-        #nav [href *= '?page=$getPage']{
+        #nav [href *= '/$getPage']{
             background-color:#A41717
         }
         </style>
