@@ -491,3 +491,20 @@ iframe{
     max-height: 100px;
     max-width: 100%;
 }
+#menu_vybaveni{
+    float: left;
+    width: 250px;
+}
+#menu_vybaveni li{
+    display: block;
+    padding: 0px;
+    margin: 15px 0px;
+}
+#menu_vybaveni li ul li{
+    cursor: pointer;
+}
+#content_vybaveni{
+    width: 970px;
+    display: block;
+    float: right;
+}

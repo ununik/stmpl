@@ -6,3 +6,13 @@ function showANDhideMenu(div){
         nav.style.height = "44px"
     }
 }
+function hideAllVybaveni(){
+    var pages = ["obuv_leto", "obleceni_leto", "obuv_zima", "obleceni_zima", "lyze_zima", "hulky_zima", "zbrane_vzduchovka", "zbrane_malorazka", "zbrane_doplnky", "jine_nastrel"];
+    for (var index = 0; index < pages.length; ++index) {
+        document.getElementById(pages[index]).style.display = "none";
+    }
+}
+function showVybaveniPage(page){
+    hideAllVybaveni();
+    document.getElementById(page).style.display = "block";
+}
