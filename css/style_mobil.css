@@ -368,3 +368,7 @@ iframe{
 #sponzori{
     width: 100%;
 }
+.sponzor img{
+    max-height: 100px;
+    max-width: 100%;
+}
