@@ -50,7 +50,7 @@ $container .= "</ul>";
 
         $obleceni_leto = "<div id='obleceni_leto'>";
         $obleceni_leto .= "<h2>Běžecké oblečení</h2>";
-
+        $obleceni_leto .= "<p>Při běhu je důležité se cítit příjemně a i k tomu by měl směřovat náš výběr sportovního oblečení. Velmi důležité je také držet se v dostatečném teple před samotným závodem i po něm.</p>";
         $obleceni_leto .= "</div>";
 
 
@@ -104,8 +104,8 @@ $container .= "</ul>";
                                 Pro vyhození a následné nabití stačí jednoduchý a přímý pohyb ukazováčku směrem k obličeji a následné zatlačení otevřeného závěru palcem opačným směrem.
                                 Nevýhodou této zbraně je její citlivost na znečištění (zbraň poměrně snadno podléhá korozi, může dojít k \"zaseknutí\" závěru kvůli znečištění nebo přimrznutí (voda se dostane mezi ložiska závěru a tam zamrzne - nestává se to nijak často)</p>
                                 <p>video rozborka a sborka</p>";
-    $zbrane_malorazka .= "<p>Další užívanou zbraní je ruská <strong>Izhmash BI-7</strong>. Tato zbraň je vytvořená tak, aby byla co nejsnazší na údržbu, proto i samotný mechanizmus je oproti německé zbrani velice jednoduchý
-                           Postup při nabíjení je velmi podobný s Anschütz s tím rozdílem, že se nenabíjí v přímém směru dozadu, ale \"vylamuje\" se raménko závěru.
+    $zbrane_malorazka .= "<p>Další užívanou zbraní je ruská <strong>Izhmash BI-7</strong>. Tato zbraň je vytvořená tak, aby byla co nejsnazší na údržbu, proto i samotný mechanizmus je oproti německé zbrani velice jednoduchý.
+                           Postup při nabíjení je velmi podobný s Anschütz s tím rozdílem, že se nenabíjí v přímém směru dozadu, ale \"vylamuje\" se raménko závěru do strany.
                            Tato zbraň má pojistku, která nedovolí vystřelit, pokud není zásobník v komoře.</p>
                            <p>video rozborka a sborka</p>";
         $zbrane_malorazka .= "</div>";
@@ -157,6 +157,6 @@ $container .= $zbrane_doplnky;
 $container .= $jine_nastrel;
 $container .= $jine_dalekohled;
 $container .= "</div>";
-$container .= "<script>hideAllVybaveni()</script>";
+$container .= "<script>hideAllVybaveni('$getVybaveni')</script>";
 
 return $container;
