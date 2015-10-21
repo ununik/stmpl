@@ -8,11 +8,12 @@
  */
 class Page
 {
-    use Navigation, Footer, Content;
+    use Navigation, Footer, Content, Chat;
     protected $navigations;
     protected $entry;
     protected $footer;
     protected $content;
     protected $title;
     protected $header;
+    protected $chat;
 }

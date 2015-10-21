@@ -11,6 +11,7 @@ return "
         <link rel='stylesheet' href='css/style_mobil.css' type='text/css' media='handheld, only screen and (max-device-width: 990px)'/>
         <script src='js/js.js'></script>
         <script src='/js/ajax_header.js'></script>
+        <script src='js/ajax_chat.js'></script>
         <script src='/js/tinymce/js/tinymce/tinymce.min.js'></script>
         <link rel='stylesheet' href='/js/lightbox/css/lightbox.css' type='text/css' media='screen' />
         <script src='/js/lightbox/js/jquery-1.7.2.min.js'></script>
@@ -47,5 +48,7 @@ return "
     {$data->getPhototoPhotobox()}
     <div id='content'>{$data->getContent()}</div>
     {$data->getFooter()}
+    <div id='chat'><div onclick='openChat()' id='chatOPEN_CLOSE'></div><div id='chatText'>{$data->getChat()}</div></div>
+    <script>openChat(); chat_treninky()</script>
     </body>
 </html>";
