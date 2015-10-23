@@ -14,4 +14,17 @@ $cont .=  "<div class='fb-like'
                         data-show-faces='true'
                         data-share='true'>
    </div>";
+
+$cont .= "<h3>Další články:</h3>";
+$i = 0;
+while ( $entryA = $entries->fetchObject() ){
+    if($i > 2){
+        break;
+    }
+    if($entryA->id != $entry->id) {
+        $cont .= "<h4><a href='/clanek/{$entryA->id}'>{$entryA->nadpis}</a></h4>";
+        $i++;
+    }
+}
+
 return $cont;

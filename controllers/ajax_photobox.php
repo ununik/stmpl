@@ -5,8 +5,13 @@
  * Date: 25. 7. 2015
  * Time: 7:14
  */
-$dbInfo = "mysql:host=localhost;dbname=stmpl";
-$db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+if($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['HTTP_HOST'] == '127.0.0.1') {
+    $db = new PDO('mysql:host=localhost;dbname=stmpl', 'root', '');
+    $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+}else{
+    $db = new PDO('mysql:host=localhost;dbname=stmpl', 'ununik', 'Unununium111');
+    $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+}
 include_once ("../methods/Database.class.php");
 $photobox = new Database($db);
 $photobox = $photobox->getPhotoboxAll();

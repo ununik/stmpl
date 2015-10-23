@@ -46,7 +46,7 @@ function chat_treninky(){
         text.style.bottom = '90px';
         zavody.style.bottom = '45px';
         ostatni.style.bottom = '0px';
-        chatAjax('treninky');
+        chatAjax("trenink");
         setTimeout(function(){ document.getElementById('chatentries').style.display = 'block';}, 1000);
     }
 }
@@ -60,6 +60,7 @@ function chat_zavody(){
     zavody.style.textDecoration = 'none';
     ostatni.style.textDecoration = 'none';
     if(zavody.style.bottom != '45px'){
+        chatAjax("trenink");
         treninky.style.bottom = '410px';
         zavody.style.bottom = '45px';
         ostatni.style.bottom = '0px';
@@ -70,7 +71,7 @@ function chat_zavody(){
         treninky.style.bottom = '410px';
         zavody.style.bottom = '365px';
         ostatni.style.bottom = '0px';
-        chatAjax('zavody');
+        chatAjax("zavody");
     }
     setTimeout(function(){ document.getElementById('chatentries').style.display = 'block';}, 1000);
 }
@@ -94,7 +95,16 @@ function chat_ostatni(){
         zavody.style.bottom = '365px';
         ostatni.style.bottom = '320px';
         ostatni.style.textDecoration = 'underline';
-        chatAjax('ostatni');
+        chatAjax("ostatni");
     }
     setTimeout(function(){ document.getElementById('chatentries').style.display = 'block';}, 1000);
+}
+
+function saveChat(form, type){
+    var value = form.getElementsByTagName('input')[0].value;
+    form.getElementsByTagName('input')[0].value = "";
+    chatAjaxInput(value, type)
+}
+function chatAjaxInput(text, type){
+    vytvoritZadostChatInput('controllers/ajax_chat_input.php', type, text);
 }

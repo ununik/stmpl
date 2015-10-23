@@ -12,6 +12,7 @@ $www = "";
 $datab = new Database($db);
 $content = $datab->getEntry($_GET['id']);
 $entry = $content->fetchObject();
+$entries = $datab->getAllEntries();
 
 $title = $entry->nadpis . " | Staré Město pod Landštejnem";
 

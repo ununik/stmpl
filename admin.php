@@ -6,8 +6,13 @@
  * Time: 9:47
  */
 session_start();
-$db = new PDO('mysql:host=localhost;dbname=stmpl', 'root', '');
-$db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+if($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['HTTP_HOST'] == '127.0.0.1') {
+    $db = new PDO('mysql:host=localhost;dbname=stmpl', 'root', '');
+    $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+}else{
+    $db = new PDO('mysql:host=localhost;dbname=stmpl', 'ununik', 'Unununium111');
+    $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+}
 $title = null;
 function __autoload($name){
     include ("methods/$name.class.php");

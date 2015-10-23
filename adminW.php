@@ -9,6 +9,11 @@ session_start();
 error_reporting(E_ALL);
 $db = new PDO('mysql:host=localhost;dbname=stmpl', 'ununik', 'Unununium111');
 $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+if($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['HTTP_HOST'] == '127.0.0.1') {
+    return new PDO('mysql:host=localhost;dbname=horp', 'root', '');
+}else{
+    return new PDO('mysql:host=localhost;dbname=ununik', 'ununik', 'am4qgx');
+}
 $title = null;
 function __autoload($name){
     include ("methods/$name.class.php");

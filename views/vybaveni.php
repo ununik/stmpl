@@ -72,7 +72,7 @@ $container .= "</ul>";
 
         $obleceni_zima = "<div id='obleceni_zima'>";
         $obleceni_zima .= "<h2>Lyžařské oblečení</h2>";
-
+        $obleceni_zima .= "<p>Nejdůležitěším poznatekm pro oblečení na lyže je dostatek vrtev. Vrstva nejvíce na těle by měla odvádět pot (ideální jsou funkční materiál - klimatex, moira a podobně). Druhou vrstvou je závodní kombinéza. Pokud právě nezávodíme, je ideální mít ještě vrstvu odolnou proti větru (např. šusťákovou kombinézu).</p>";
         $obleceni_zima .= "</div>";
 
 

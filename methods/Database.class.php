@@ -234,4 +234,33 @@ class Database
             trigger_error($msg);
         }
     }
+
+    public function getChat($type){
+        $sql = "SELECT * FROM `chat` WHERE `type`='$type' ORDER BY timestamp DESC LIMIT 50";
+        $statement = $this->db->prepare($sql);
+        try {
+            $statement->execute();
+        } catch (Exception $e) {
+            $exceptionMessage
+                = "<p>You tried to run this sql: $sql <p>
+                    <p>Exception: $e</p>";
+            trigger_error($exceptionMessage);
+        }
+        return $statement->fetchAll();
+    }
+
+    public function setChat($type, $text){
+        $timestamp = time();
+        $entrySQL = "INSERT INTO `chat` (`type` ,`text`, `timestamp`)
+                     VALUES ('$type', '$text', '$timestamp')";
+        $entryStatement = $this->db->prepare( $entrySQL );
+
+        try{
+            $entryStatement->execute();
+        } catch (Exception $e){
+            $msg = "<p>You tried to run this sql: $entrySQL<p>
+                    <p>Exception: $e</p>";
+            trigger_error($msg);
+        }
+    }
 }
