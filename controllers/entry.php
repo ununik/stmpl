@@ -8,7 +8,7 @@
 if(!isset($_GET['id']) || $_GET['id'] == ""){
     header("location: index.php?page=noPage");
 }
-$www = "";
+$www = "http://biatlon-stmpl.tode.cz/";
 $datab = new Database($db);
 $content = $datab->getEntry($_GET['id']);
 $entry = $content->fetchObject();
