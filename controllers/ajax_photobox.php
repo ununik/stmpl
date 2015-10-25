@@ -15,7 +15,6 @@ if($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['HTTP_HOST'] == '127.0.0.1')
 include_once ("../methods/Database.class.php");
 $photobox = new Database($db);
 $photobox = $photobox->getPhotoboxAll();
-$photo = "<a href='admin.php?page=new_photo_in_photobox' class=\"photobox-photo-a\"><div class=\"photobox-photo\">Nový příspěvek</div></a>";
 while ( $box = $photobox->fetchObject() ){
 
     $photo .= "<div class=\"photobox-photo\" onclick='photoboxHeaderPhoto(\"{$box->image}\", \"{$box->title}\", \"{$box->link}\", \"{$box->text}\")'><img src='/images/header/150/{$box->image}'> {$box->title}";

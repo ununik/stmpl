@@ -18,7 +18,12 @@ a img{
     width: 275px;
     height: 500px;
     z-index: 500;
+    border: 1px solid #be1212;
     background-color: #cd1d1d;
+    box-shadow: 0px 0px 5px black;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
     color: white;
     -webkit-transition: bottom 1s;
     -moz-transition: bottom 1s;
@@ -151,6 +156,15 @@ a img{
     padding: 10px 13px;
     color: white;
 }
+#foto_z_trati img{
+    display: inline-block;
+    text-align: center;
+    width:185px;
+    margin: 4px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;;
+}
 #foto_ze_strelnice{
     margin-top: 50px;
     float:right;
@@ -186,6 +200,9 @@ textarea{
     float: right;
     width: 1000px;
     margin:35px 0px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 .clen_div{
     width: 400px;
@@ -637,4 +654,35 @@ iframe{
     float: right;
     text-align: justify;
     margin-top: 15px;
+}
+#mapa_kontakt{
+    box-shadow: 0px 0px 5px black;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#mapa_kontakt *{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#kontakt_table{
+    border-collapse: collapse;
+}
+#kontakt_table td{
+    padding-bottom: 6px;
+}
+.kontakt_tabulka_levo{
+    text-align: right;
+    padding-right: 10px;
+    vertical-align: top;
+}
+#kontakt_psc{
+    padding-left: 25px;
+}
+#areal_popis{
+    margin: 0px 25px;
+}
+.fb-like{
+    margin: 5px 15px;
 }

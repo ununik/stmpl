@@ -7,11 +7,13 @@
  */
 
 return "<h1>Areál</h1>
-        <p>Klub biatlonu Staré Město pod Landštejnem má jedinečnou tréninkovou lokalitu - střelnici s běžeckými okruhy pod hrází vodní nádrže Landštejn.</p>
-        <p>Sřelnice je vybavena 25 mechanickými stavy na které je možno střílet dlouhými zbraněmi ráže .22 lr (na 50m) nebo vzduchovými puškami (na 10m).</p>
-        <p>V areálu se nachází 8 běžeckých okruhů s různou terenní obtížností.</p>
-        <p>V dosahu areálu je cyklostezka, vhodná k inline bruslení i jízdě na kolečkových lyžích.</p>
-        <p>GPS: <strong>N:49.018282 E:15.244692</strong></p>
+        <div id='areal_popis'>
+            <p>Klub biatlonu Staré Město pod Landštejnem má jedinečnou tréninkovou lokalitu - střelnici s běžeckými okruhy pod hrází vodní nádrže Landštejn.</p>
+            <p>Sřelnice je vybavena 25 mechanickými stavy na které je možno střílet dlouhými zbraněmi ráže .22 lr (na 50m) nebo vzduchovými puškami (na 10m).</p>
+            <p>V areálu se nachází 8 běžeckých okruhů s různou terenní obtížností.</p>
+            <p>V dosahu areálu je cyklostezka, vhodná k inline bruslení i jízdě na kolečkových lyžích.</p>
+            <p>GPS: <strong>N:49.018282 E:15.244692</strong></p>
+        </div>
         <h2 class='areal_nadpis'>Plán tratí</h2>
         <img src='images/areal/trate.png' id='plan_trati'>
         <table class='plan_trati'>
@@ -33,7 +35,11 @@ return "<h1>Areál</h1>
             <td><img src='images/areal/fialova.png'></td><td>0,50 km</td>
         </tr>
         </table>
-        <div id='foto_z_trati'><h2>Fotografie z trati</h2></div>
+        <div id='foto_z_trati'><h2>Fotografie z trati</h2>
+            <a href='images/areal/trat/1000/1.jpg' rel='lightbox[trat]'><img src='images/areal/trat/250/1.jpg'></a>
+            <a href='images/areal/trat/1000/2.jpg' rel='lightbox[trat]'><img src='images/areal/trat/250/2.jpg'></a>
+            <a href='images/areal/trat/1000/3.jpg' rel='lightbox[trat]'><img src='images/areal/trat/250/3.jpg'></a>
+        </div>
         <div id='foto_ze_strelnice'><h2>Fotografie ze střelnice</h2>
             <a href='images/areal/strelnice/1000/_H107628.jpg' rel='lightbox[strelnice]'><img src='images/areal/strelnice/250/_H107628.jpg'></a>
             <a href='images/areal/strelnice/1000/_H107643.jpg' rel='lightbox[strelnice]'><img src='images/areal/strelnice/250/_H107643.jpg'></a>
