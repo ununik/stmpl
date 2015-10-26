@@ -8,7 +8,7 @@
 $container = "<h1>Kalendář</h1>";
 
 $container .= "<table id='kalendar_table'>";
-$container .= "<tr><th colspan='7'><h3><a href='?page=kalendar&timestamp=$prewiousmonth'><<</a> $termFromTo <a href='?page=kalendar&timestamp=$nextmonth'>>></a></h3></th></tr>";
+$container .= "<tr><th colspan='7'><h3><a href='/kalendar/$prewiousmonth'><<</a> $termFromTo <a href='/kalendar/$nextmonth'>>></a></h3></th></tr>";
 /**
  * Nazev dnu v tydnu
  */
