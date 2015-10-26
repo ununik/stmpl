@@ -12,6 +12,20 @@ class Database
     public function __construct($db){
         $this->db = $db;
     }
+    public function getCalendar($from, $to){
+        $sql = "SELECT * FROM `kalendar` WHERE (`from`>='$from' && `from`<='$to') || (`from`<='$from' && `to`>='$from') ORDER BY `from`";
+        $statement = $this->db->prepare($sql);
+        try {
+            $statement->execute();
+        } catch (Exception $e) {
+            $exceptionMessage
+                = "<p>You tried to run this sql: $sql <p>
+                    <p>Exception: $e</p>";
+            trigger_error($exceptionMessage);
+        }
+        return $statement->fetchAll();
+    }
+
     public function getHomeEntries(){
         $sql = "SELECT nadpis, id, SUBSTRING(text, 1, 2000) AS text
                 FROM uvodni_texty ORDER BY timestamp DESC LIMIT 3 ";

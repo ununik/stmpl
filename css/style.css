@@ -686,3 +686,40 @@ iframe{
 .fb-like{
     margin: 5px 15px;
 }
+#kalendar_table{
+    width: 66%;
+    float: right;
+    border-collapse: collapse;
+}
+#kalendar_table td{
+    border: 1px solid black;
+}
+#kalendar_table th{
+    font-size: 1.15em;
+    padding: 10px 0px;
+}
+.kalendar_activeDay_td{
+    width: auto !important;
+    height: 100px;
+    vertical-align: top;
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    -ms-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    padding: 0px;
+    margin: 0px;
+}
+.kalendar_activeDay_td:hover{
+    background-color: rgba(205,29,29,0.2);
+}
+.kalendar_nedele{
+    color: #cd1d1d;
+}
+.kalendar_den_number{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 8px 10px;
+    display: inline-block;
+    background-color: white;
+}
