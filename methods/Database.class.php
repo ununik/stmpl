@@ -26,6 +26,47 @@ class Database
         return $statement->fetchAll();
     }
 
+    public function getEventCalendar($id){
+        $sql = "SELECT * FROM `kalendar` WHERE `id`='$id' ORDER BY `from`";
+        $statement = $this->db->prepare($sql);
+        try {
+            $statement->execute();
+        } catch (Exception $e) {
+            $exceptionMessage
+                = "<p>You tried to run this sql: $sql <p>
+                    <p>Exception: $e</p>";
+            trigger_error($exceptionMessage);
+        }
+        return $statement->fetch();
+    }
+
+    public function saveEventCalendar($nadpis, $from, $to, $popis, $odkaz, $category){
+        $entrySQL = "INSERT INTO kalendar (`nadpis`, `from`, `to`, `popis`, `odkaz`, `kategorie`)
+                     VALUES ( '$nadpis', '$from', '$to', '$popis', '$odkaz', '$category')";
+        $entryStatement = $this->db->prepare( $entrySQL );
+
+        try{
+            $entryStatement->execute();
+        } catch (Exception $e){
+            $msg = "<p>You tried to run this sql: $entrySQL<p>
+                    <p>Exception: $e</p>";
+            trigger_error($msg);
+        }
+    }
+
+    public  function updateEventCalendar($nadpis, $from, $to, $popis, $odkaz, $category, $id){
+        $entrySQL = "UPDATE `kalendar` SET `nadpis`='$nadpis',`from`='$from',`to`='$to',`popis`='$popis',`odkaz`='$odkaz',`kategorie`='$category' WHERE id=$id";
+        $entryStatement = $this->db->prepare( $entrySQL );
+
+        try{
+            $entryStatement->execute();
+        } catch (Exception $e){
+            $msg = "<p>You tried to run this sql: $entrySQL<p>
+                    <p>Exception: $e</p>";
+            trigger_error($msg);
+        }
+    }
+
     public function getHomeEntries(){
         $sql = "SELECT nadpis, id, SUBSTRING(text, 1, 2000) AS text
                 FROM uvodni_texty ORDER BY timestamp DESC LIMIT 3 ";

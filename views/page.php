@@ -10,8 +10,9 @@ return "
         <link href='http://fonts.googleapis.com/css?family=Ubuntu:500,500italic,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel='stylesheet' href='css/style.css' type='text/css' media='screen'/>
         <link rel='stylesheet' href='/css/style_mobil.css' type='text/css' media='handheld, only screen and (max-device-width: 990px)'/>
-        <script src='/js/js.js'></script>
+        <script src='js/js.js'></script>
         <script src='/js/ajax_header.js'></script>
+        <script src='js/ajax_kalendar.js'></script>
         <script src='/js/ajax_chat.js'></script>
         <script src='/js/tinymce/js/tinymce/tinymce.min.js'></script>
         <link rel='stylesheet' href='/js/lightbox/css/lightbox.css' type='text/css' media='screen' />

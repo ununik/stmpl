@@ -7,6 +7,7 @@
  */
 $container = "<h1>Kalendář</h1>";
 
+
 $container .= "<table id='kalendar_table'>";
 $container .= "<tr><th colspan='7'><h3><a href='?page=kalendar&timestamp=$prewiousmonth'><<</a> $termFromTo <a href='?page=kalendar&timestamp=$nextmonth'>>></a></h3></th></tr>";
 /**
@@ -35,14 +36,16 @@ for($daynumber = 1; $daynumber <= $numberDaysInMonth; $daynumber++){
 
     }
     $container .= "'><div class='kalendar_den_number'>$daynumber</div>";
+    $timestamp_day = strtotime(date('Y-m-' . $daynumber, $timestamp));
     if(isset($den['kalendar'][$daynumber])) {
         foreach ($den['kalendar'][$daynumber] as $kalendar) {
             /**
              * udalosti behem dne
              */
-            $container .= "<a class='kalendar_{$kalendar["kategorie"]}' title='{$kalendar['nadpis']}' onclick='kalendar_udalost(\"{$kalendar['id']}\")'>{$kalendar['nadpis']}</a>";
+            $container .= "<a class='kalendar_{$kalendar["kategorie"]}' title='{$kalendar['nadpis']}' onclick='kalendar_udalost_admin(\"{$kalendar['id']}\", \"$timestamp_day\")'>{$kalendar['nadpis']}</a>";
         }
     }
+    $container .= "<div onclick='kalendar_udalost_admin(\"0\", \"$timestamp_day\")'>+</div>";
     $container .= "</td>";
 
 

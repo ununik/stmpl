@@ -36,4 +36,4 @@ foreach($kalendar as $kalendar){
     }
 }
 
-return include_once('views/kalendar-page.php');
+return include_once('views/admin/kalendar-page.php');

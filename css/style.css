@@ -723,3 +723,61 @@ iframe{
     display: inline-block;
     background-color: white;
 }
+.kalendar_zavody{
+    background-color: green;
+    width: 100%;
+    font-size: 11px;
+    padding: 2px 0px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    color: white !important;
+}
+.kalendar_trenink{
+    background-color: red;
+    width: 100%;
+    font-size: 11px;
+    padding: 2px 0px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    color: white !important;
+}
+.kalendar_brigada{
+    background-color: blue;
+    width: 100%;
+    font-size: 11px;
+    padding: 2px 0px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    color: white !important;
+}
+.kalendar_jine{
+    background-color: silver;
+    width: 100%;
+    font-size: 11px;
+    padding: 2px 0px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+#kalendar_popis{
+    width: 30%;
+    float: left;
+}
+.admin_calendar_table td{
+    vertical-align: top;
+}
+.admin_calendar_table #kalendar_popis textarea{
+    width: 260px;
+    height: 250px;
+    outline-color: #cd1d1d;
+    border:1px dotted black;
+}
+.admin_calendar_table input{
+    width: 260px;
+    padding: 5px 0px;
+    outline-color: #cd1d1d;
+    border:1px dotted black;
+}

@@ -108,3 +108,29 @@ function saveChat(form, type){
 function chatAjaxInput(text, type){
     vytvoritZadostChatInput('controllers/ajax_chat_input.php', type, text);
 }
+function kalendar_udalost(id){
+    kalendarAjax(id);
+}
+function kalendar_udalost_admin(id, tim){
+    kalendarAjaxAdmin(id, tim);
+}
+function kalendar_udalost_admin_saveNew(){
+    var nadpis = document.getElementById('kalendar_nadpis').value;
+    var from = document.getElementById('kalendar_from').value;
+    var to = document.getElementById('kalendar_to').value;
+    var popis = document.getElementById('kalendar_popis').getElementsByTagName('textarea')[0].value;
+    var odkaz = document.getElementById('kalendar_odkaz').value;
+    var category = document.getElementById('kalendar_category').value;
+    vytvoritZadostKalendarSave('controllers/admin/ajax_kalendar.php?save=1&id=&', nadpis, from, to, popis, odkaz, category);
+    location.reload();
+}
+function kalendar_udalost_admin_saveUpdate(id){
+    var nadpis = document.getElementById('kalendar_nadpis').value;
+    var from = document.getElementById('kalendar_from').value;
+    var to = document.getElementById('kalendar_to').value;
+    var popis = document.getElementById('kalendar_popis').getElementsByTagName('textarea')[0].value;
+    var odkaz = document.getElementById('kalendar_odkaz').value;
+    var category = document.getElementById('kalendar_category').value;
+    vytvoritZadostKalendarSave('controllers/admin/ajax_kalendar.php?save=1&id=' + id + '&', nadpis, from, to, popis, odkaz, category);
+    location.reload();
+}
