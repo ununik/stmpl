@@ -1,5 +1,5 @@
 function chatAjax(type){
-    vytvoritZadostChat('controllers/ajax_chat_result.php', type);
+    vytvoritZadostChat('/controllers/ajax_chat_result.php', type);
 }
 function vytvoritZadostChat (url, type) {
     var http_zadost = false;

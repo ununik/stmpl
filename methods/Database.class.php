@@ -26,6 +26,21 @@ class Database
         return $statement->fetchAll();
     }
 
+    public function getNext10Calendar(){
+        $now = time();
+        $sql = "SELECT * FROM `kalendar` WHERE `to`>=$now ORDER BY `from` LIMIT 10";
+        $statement = $this->db->prepare($sql);
+        try {
+            $statement->execute();
+        } catch (Exception $e) {
+            $exceptionMessage
+                = "<p>You tried to run this sql: $sql <p>
+                    <p>Exception: $e</p>";
+            trigger_error($exceptionMessage);
+        }
+        return $statement->fetchAll();
+    }
+
     public function getEventCalendar($id){
         $sql = "SELECT * FROM `kalendar` WHERE `id`='$id' ORDER BY `from`";
         $statement = $this->db->prepare($sql);

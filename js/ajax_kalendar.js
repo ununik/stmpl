@@ -1,8 +1,8 @@
 function kalendarAjax(id){
-    vytvoritZadostKalendar('controllers/ajax_kalendar.php', id);
+    vytvoritZadostKalendar('/controllers/ajax_kalendar.php', id);
 }
 function kalendarAjaxAdmin(id, tim){
-    vytvoritZadostKalendar('controllers/admin/ajax_kalendar.php', id, tim);
+    vytvoritZadostKalendar('/controllers/admin/ajax_kalendar.php', id, tim);
 }
 function vytvoritZadostKalendar (url, id, tim) {
     var http_zadost = false;
@@ -39,10 +39,6 @@ function stavObsahuKalendar(http_zadost, id) {
             document.getElementById('kalendar_popis').innerHTML = http_zadost.responseText;
         } else {
             // alert('Byl problém se žádostí.');
-        }
-    }else{
-        if(add == false){
-            //document.getElementById('chatentries').innerHTML = '<img src="images/header/loading.gif" id="loading">';
         }
     }
 
@@ -85,9 +81,6 @@ function stavObsahuKalendarSave(http_zadost) {
             // alert('Byl problém se žádostí.');
         }
     }else{
-        if(add == false){
-            //document.getElementById('chatentries').innerHTML = '<img src="images/header/loading.gif" id="loading">';
-        }
     }
 
 }

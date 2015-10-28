@@ -29,6 +29,9 @@ for($daynumber = 1; $daynumber <= $numberDaysInMonth; $daynumber++){
      * Vypis dnu
      */
     $container .= "<td class='kalendar_activeDay_td";
+    if($today ==  $daynumber){
+        $container .= " today ";
+    }
     if($i == 6){
         $container .= " kalendar_nedele";
     }else{
@@ -53,6 +56,27 @@ for($i; $i < 7; $i++){
 }
 $container .= "</tr>";
 $container .= "</table>";
-
 $container .= "<div id='kalendar_popis'></div>";
+$container .= "<table id='nextEvents'>";
+$container .= "<tr  class='nextEvents_headline'><td colspan='2'><h3>Nejbližší události</h3></td></tr>";
+foreach($kalendarNext10 as $result){
+    $container .= "<tr  onclick='kalendar_udalost(\"{$result['id']}\")'><td class='kalendar_nadpis'>";
+    /**
+     * date
+     */
+        if($result['to'] == "" || (date('Y-m-j', $result['from']) == date('Y-m-j', $result['to']))){
+            $container .= date('j. m. Y', $result['from']);
+        }elseif(date('Y-m', $result['from']) == date('Y-m', $result['to'])){
+            $container .= date('j.', $result['from']) . ' - ' . date('j. ', $result['to']) . date('m. Y', $result['from']);
+        }elseif(date('Y', $result['from']) == date('Y', $result['to'])){
+            $container .= date('j. m.', $result['from']) . ' - ' . date('j. m.', $result['to']) . date(' Y', $result['from']);
+        }else{
+            $container .= date('j. m. Y', $result['from']) . ' - ' . date('j. m. Y', $result['to']);
+        }
+    $container .= "</td><td>{$result['nadpis']}</td>";
+    $container .= "</tr>";
+}
+$container .= "</table>";
+
+
 return $container;

@@ -687,7 +687,6 @@ iframe{
     margin: 5px 15px;
 }
 #kalendar_table{
-    width: 66%;
     float: right;
     border-collapse: collapse;
 }
@@ -699,7 +698,7 @@ iframe{
     padding: 10px 0px;
 }
 .kalendar_activeDay_td{
-    width: auto !important;
+    width: 120px !important;
     height: 100px;
     vertical-align: top;
     -webkit-transition: background-color 0.2s;
@@ -763,8 +762,7 @@ iframe{
     cursor: pointer;
 }
 #kalendar_popis{
-    width: 30%;
-    float: left;
+
 }
 .admin_calendar_table td{
     vertical-align: top;
@@ -780,4 +778,37 @@ iframe{
     padding: 5px 0px;
     outline-color: #cd1d1d;
     border:1px dotted black;
+}
+#nextEvents{
+    width: 30%;
+    float: left;
+    margin: 30px 0px 0px 0px;
+    border-collapse: collapse;
+}
+#nextEvents tr:hover{
+    background-color: rgba(205,29,29,0.2);
+    cursor: pointer;
+}
+.nextEvents_headline:hover{
+    background-color: transparent !important;
+    cursor: auto !important;
+}
+#nextEvents td{
+    padding: 5px 0px;
+}
+#nextEvents h3{
+    margin: 0px;
+}
+#nextEvents .kalendar_nadpis{
+    width: 170px;
+    text-align: left;
+}
+#kalendar_popis .eq{
+    display: none !important;
+}
+.today{
+    background-color: rgba(29, 117, 205,0.3);
+}
+.today:hover{
+    background-color: rgba(29, 117, 205,0.6) !important;
 }

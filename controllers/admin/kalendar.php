@@ -20,6 +20,7 @@ $prewiousmonth = strtotime('last month', $firstday_timestamp);
 $nextmonth = strtotime('next month', $firstday_timestamp);
 
 $firstdayInWeeknum = date('w', $firstday_timestamp) - 1;
+if($firstdayInWeeknum == "-1"){ $firstdayInWeeknum = 6;};
 $numberDaysInMonth = cal_days_in_month(CAL_GREGORIAN,date('m', $firstday_timestamp),date('Y'));
 $kalendar = new Database($db);
 $kalendar = $kalendar->getCalendar($firstday_timestamp, $lastday_timestamp);
