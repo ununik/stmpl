@@ -18,7 +18,7 @@ include_once ("../methods/Database.class.php");
 $database = new Database($db);
 $result = $database->getEventCalendar($id);
 $container = "<h2>{$result['nadpis']}</h2>";
-$container .= "<table><tr><td>Termín</td><td>";
+$container .= "<table><tr><td>Termín:</td><td>";
 
 if($result['to'] == "" || (date('Y-m-j', $result['from']) == date('Y-m-j', $result['to']))){
     $container .= date('j. m. Y', $result['from']);
@@ -33,7 +33,7 @@ if($result['to'] == "" || (date('Y-m-j', $result['from']) == date('Y-m-j', $resu
 $container .= "</td></tr>";
 if($result['popis'] != "") {
     $popis = nl2br($result['popis']);
-    $container .= "<tr><td>Popis</td><td>{$popis}</td></tr>";
+    $container .= "<tr><td>Popis:</td><td>{$popis}</td></tr>";
 }
 if($result['odkaz'] != "") {
     $container .= "<tr><td colspan='2'><a href='{$result['odkaz']}' title='{$result['nadpis']}'>Více..</a></td></tr>";

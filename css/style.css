@@ -8,6 +8,16 @@
 body{
     font-family: 'Ubuntu', sans-serif;
 }
+#black_background{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 790;
+	background-color: black;
+}
 a img{
     border: none;
 }
@@ -412,6 +422,12 @@ iframe{
     color: black;
     background-color: transparent;
 }
+.home_entry_div_text {
+	font-size: 0.98em;
+	line-height: 1.25;
+	text-align: justify;
+	font-weight: normal;
+}
 #header_all{
     padding: 5px 20px;
     font-size: 21px;
@@ -762,7 +778,15 @@ iframe{
     cursor: pointer;
 }
 #kalendar_popis{
-
+	position: fixed;
+	width: 70%;
+	height: 50%;
+	display: inline-block;
+	margin: 0px auto;
+	background-color: white;
+	padding: 60px;
+	display: none;
+	z-index: 800;
 }
 .admin_calendar_table td{
     vertical-align: top;
@@ -811,4 +835,12 @@ iframe{
 }
 .today:hover{
     background-color: rgba(29, 117, 205,0.6) !important;
+}
+#zavrit{
+	position: absolute;
+	color: black;
+	top: 0px;
+	right: 0px;
+	margin: 15px;
+	cursor: pointer;
 }

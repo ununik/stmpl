@@ -39,6 +39,16 @@ a img{
     padding: 10px 13px;
     color: white;
 }
+#foto_z_trati img{
+	display: inline-block;
+    text-align: center;
+    margin: 25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	width: 90%;
+	height: auto;
+}
 #foto_ze_strelnice{
     margin-top: 50px;
     float:none;
@@ -53,11 +63,12 @@ a img{
 #foto_ze_strelnice img{
     display: inline-block;
     text-align: center;
-    width:185px;
-    margin: 4px;
+	width: 90%;
+	height: auto;
+    margin: 25px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    border-radius: 5px;;
+    border-radius: 5px;
 }
 body {
     width: 100%;
@@ -245,6 +256,10 @@ iframe{
     color: black;
     background-color: transparent;
 }
+.home_entry_div_text img{
+	width: 100%;
+	height: auto;
+}
 #header_all{
     padding: 5px 20px;
     font-size: 21px;
@@ -371,4 +386,28 @@ iframe{
 .sponzor img{
     max-height: 100px;
     max-width: 100%;
+    height: auto;
+}
+#nextEvents{
+	width: 100%;
+}
+#nextEvents .kalendar_nadpis{
+	width: 143px !important;
+}
+#kalendar_table{
+	width: 100%;
+}
+#kalendar_table td{
+	width: auto;
+	height: 60px;
+}
+#kalendar_table td a{
+	font-size: 0px;
+	height: 20px;
+}
+#kalendar_popis{
+	width: 90%;
+	height: 90%;
+	padding: 8px 5px;
+	top: 50px;
 }

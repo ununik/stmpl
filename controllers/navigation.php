@@ -6,7 +6,7 @@
  * Time: 18:41
  */
 
-$navigation = "<div id='menu_nadpis' onclick='showANDhideMenu(this)'>MENU <img src='images/header/menu_img.png'></div>";
+$navigation = "<div id='menu_nadpis' onclick='showANDhideMenu(this)'>MENU <img src='/images/header/menu_img.png'></div>";
 $navigation .= "<a href='/'>Domů</a>";
 $navigation .= "<a href='/clenove'>Členové</a>";
 $navigation .= "<a href='/areal'>Areál</a>";

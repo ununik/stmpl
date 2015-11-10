@@ -56,7 +56,7 @@ for($i; $i < 7; $i++){
 }
 $container .= "</tr>";
 $container .= "</table>";
-$container .= "<div id='kalendar_popis'></div>";
+$container .= "<div id='black_background'></div><div id='kalendar_popis'></div>";
 $container .= "<table id='nextEvents'>";
 $container .= "<tr  class='nextEvents_headline'><td colspan='2'><h3>Nejbližší události</h3></td></tr>";
 foreach($kalendarNext10 as $result){

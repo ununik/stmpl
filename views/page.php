@@ -9,7 +9,7 @@ return "
         <link rel='shortcut icon' href='images/icon.ico'/>
         <link href='http://fonts.googleapis.com/css?family=Ubuntu:500,500italic,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel='stylesheet' href='css/style.css' type='text/css' media='screen'/>
-        <link rel='stylesheet' href='/css/style_mobil.css' type='text/css' media='handheld, only screen and (max-device-width: 990px)'/>
+        <link rel='stylesheet' href='css/style_mobil.css' type='text/css' media='handheld, only screen and (max-device-width: 990px)'/>
         <script src='/js/js.js'></script>
         <script src='js/ajax_header.js'></script>
         <script src='js/ajax_kalendar.js'></script>

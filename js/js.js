@@ -1,7 +1,7 @@
 function showANDhideMenu(div){
     nav = document.getElementById("nav");
-    if(nav.style.height != "250px"){
-        nav.style.height = "250px"
+    if(nav.style.height != "260px"){
+        nav.style.height = "260px"
     }else{
         nav.style.height = "44px"
     }
@@ -133,4 +133,8 @@ function kalendar_udalost_admin_saveUpdate(id){
     var category = document.getElementById('kalendar_category').value;
     vytvoritZadostKalendarSave('/controllers/admin/ajax_kalendar.php?save=1&id=' + id + '&', nadpis, from, to, popis, odkaz, category);
     location.reload();
+}
+function zavritOkno(pozadi, okno){
+	document.getElementById(pozadi).style.display = "none";
+	document.getElementById(okno).style.display = "none";
 }

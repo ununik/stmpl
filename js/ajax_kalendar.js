@@ -36,7 +36,10 @@ function stavObsahuKalendar(http_zadost, id) {
 
     if (http_zadost.readyState == 4) {
         if (http_zadost.status == 200) {
-            document.getElementById('kalendar_popis').innerHTML = http_zadost.responseText;
+        	document.getElementById('black_background').style.display = "block";
+        	document.getElementById('kalendar_popis').style.display = "block";
+            document.getElementById('kalendar_popis').innerHTML = '<div id="zavrit" onclick="zavritOkno(\'black_background\', \'kalendar_popis\')">Zavřít</div>'+http_zadost.responseText;
+           
         } else {
             // alert('Byl problém se žádostí.');
         }
