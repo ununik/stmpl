@@ -20,10 +20,10 @@ function showVybaveniPage(page){
 function openChat(){
     var chat = document.getElementById('chat');
 
-    if(chat.style.bottom != "-455px"){
-        chat.style.bottom = "-455px";
+    if(chat.style.bottom != "-456px"){
+        chat.style.bottom = "-456px";
     }else{
-        chat.style.bottom = "0px";
+        chat.style.bottom = "-1px";
     }
 }
 

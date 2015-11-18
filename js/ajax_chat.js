@@ -41,9 +41,6 @@ function stavObsahuChat(http_zadost, type) {
             // alert('Byl problém se žádostí.');
         }
     }else{
-        if(add == false){
-            //document.getElementById('chatentries').innerHTML = '<img src="images/header/loading.gif" id="loading">';
-        }
     }
 
 }

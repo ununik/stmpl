@@ -21,10 +21,13 @@ body{
 a img{
     border: none;
 }
+.clearBoth{
+	clear: both;
+}
 #chat{
     position: fixed;
     bottom: -500px;
-    right: 0px;
+    right: 5px;
     width: 275px;
     height: 500px;
     z-index: 500;
@@ -522,6 +525,8 @@ iframe{
     height:44px;
     background-color: #cd1d1d;
     border-bottom: solid black 1px;
+    -webkit-transition: background-color 2s;
+    transition: background-color 2s;
 }
 #nav a{
     color:white;
@@ -814,7 +819,7 @@ iframe{
     cursor: pointer;
 }
 .nextEvents_headline:hover{
-    background-color: transparent !important;
+    backgrounclearBothd-color: transparent !important;
     cursor: auto !important;
 }
 #nextEvents td{
@@ -835,6 +840,23 @@ iframe{
 }
 .today:hover{
     background-color: rgba(29, 117, 205,0.6) !important;
+}
+.zajimavosti{
+	margin: 35px 0px 0px 0px;
+}
+.zajimavosti p{
+	margin: 8px 0px 8px 15px;
+	text-indent: 25px;
+}
+.zajimavosti div{
+	padding: 5px 10px;
+	border-left: 2px solid #cd1d1d;
+	margin-left: 20px;
+	margin-bottom: 45px;
+}
+.zajimavosti h3{
+	font-size: 1.25em;
+	margin-bottom: 10px;
 }
 #zavrit{
 	position: absolute;

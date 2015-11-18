@@ -12,7 +12,7 @@ return "<h1>Areál</h1>
             <p>Sřelnice je vybavena 25 mechanickými stavy na které je možno střílet dlouhými zbraněmi ráže .22 lr (na 50m) nebo vzduchovými puškami (na 10m).</p>
             <p>V areálu se nachází 8 běžeckých okruhů s různou terenní obtížností.</p>
             <p>V dosahu areálu je cyklostezka, vhodná k inline bruslení i jízdě na kolečkových lyžích.</p>
-            <p>GPS: <strong>N:49.018282 E:15.244692</strong></p>
+            <p>GPS: <strong><a href='http://mapy.cz/zakladni?x=15.2452606&y=49.0181835&z=17&source=coor&id=15.244692%2C49.018282' target='_blank'>N:49.018282 E:15.244692</a></strong></p>
         </div>
         <h2 class='areal_nadpis'>Plán tratí</h2>
         <img src='images/areal/trate.png' id='plan_trati'>
@@ -49,4 +49,31 @@ return "<h1>Areál</h1>
             <a href='images/areal/strelnice/1000/_H108053.jpg' rel='lightbox[strelnice]'><img src='images/areal/strelnice/250/_H108053.jpg'></a>
 
         </div>
+		<div class='clearBoth zajimavosti'>
+		<h2  class='areal_nadpis'>Zajímavosti v okolí</h2>
+		<h3>Hrad Landštejn (<small>2km</small>)</h3>
+			<div>
+				<p>
+					Dominantou okolí Starého Města pod Landštejnem je bezesporu hrad Landštejn. Tento hrad z období Přemysla Otakara I. střeží hranici Čech, Moravy a Rakouska.
+			Z hlavní věže si lze prohlédnout nejen hradní komplex, ale za přívětivého počasí i 140km vzdálené vrcholky Dolnorakouských Alp. 
+				</p>
+			</div>
+		
+		<h3>Bizoní farma (<small>5km</small>)</h3>
+			<div>
+				<p>
+					Bizon americký (Bison bison) je velmi netradiční exemplář v české fauně. Směrem k rakouským hranicím se nachází celá farma.   
+				</p>
+			</div>
+		
+		<h3>Slavonice (<small>10km</small>)</h3>
+			<div>
+				<p>
+					Typické jihočeské město s renesančním jádrem je velmi příjemným zpestřením přírodních krás České Kanady.
+				</p>
+				<p>
+					Dech dějin minulého století je cítit ze zrekonstruovaného opevnění z roku 1938 v Pevnostním areálu Slavonice.
+				</p>
+			</div>
+		</div>
         ";
