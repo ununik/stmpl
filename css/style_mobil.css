@@ -411,3 +411,16 @@ iframe{
 	padding: 8px 5px;
 	top: 50px;
 }
+#kinesiotaping_all{
+	width: 100%;
+	float: none;	
+}
+.kinesiotaping_part{
+	display: block;
+}
+.kinesiotaping_part h2{
+	font-size: 110%;
+}
+#postava{
+	display: none;
+}

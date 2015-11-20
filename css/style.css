@@ -806,6 +806,10 @@ iframe{
     padding: 5px 13px;
     background-color:#cd1d1d;
 }
+.kinesiotaping_part p{
+	margin: 10px 0px 8px 10px;
+	text-align: justify;
+}
 .admin_calendar_table td{
     vertical-align: top;
 }
