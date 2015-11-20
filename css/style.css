@@ -793,6 +793,19 @@ iframe{
 	display: none;
 	z-index: 800;
 }
+#kinesiotaping_all{
+	float: right;
+	width: 720px;
+}
+.kinesiotaping_part{
+	display: none;
+}
+.kinesiotaping_part h2{
+	margin: 0px;
+    color: white;
+    padding: 5px 13px;
+    background-color:#cd1d1d;
+}
 .admin_calendar_table td{
     vertical-align: top;
 }

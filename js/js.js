@@ -138,3 +138,13 @@ function zavritOkno(pozadi, okno){
 	document.getElementById(pozadi).style.display = "none";
 	document.getElementById(okno).style.display = "none";
 }
+
+function kinesiotapingPart(part){
+	var allDIV = document.getElementById('kinesiotaping_all').getElementsByTagName('div');
+	for(i=0; i < allDIV.length; i++){
+		allDIV[i].style.display = "none";
+	}
+	document.getElementById(part).style.display = "block";
+	document.getElementById('postava').style.backgroundImage = "url(/images/kinesiotaping/part/"+part+".png)";
+	window.history.pushState("object or string", "Title", "/kinesiotaping/"+part);
+}
