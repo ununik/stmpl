@@ -240,6 +240,7 @@ iframe{
 .home_entry_div_text{
     width: 92%;
     margin: 0px 15px;
+    overflow-x: auto;
 }
 .home_entry_pokracovani{
     display: block;
