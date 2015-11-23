@@ -868,12 +868,25 @@ iframe{
 .zajimavosti div{
 	padding: 5px 10px;
 	border-left: 2px solid #cd1d1d;
-	margin-left: 20px;
+	margin-left: 12px;
 	margin-bottom: 45px;
+	overflow: hidden;
+	height: 0px;
+	-webkit-transition: height 2s;
+    -moz-transition: height 2s;
+    -ms-transition: height 2s;
+    -o-transition: height 2s;
+    transition: height 2s;
 }
 .zajimavosti h3{
 	font-size: 1.25em;
 	margin-bottom: 10px;
+}
+.arrow_down{
+	margin: 0px 20px 0px 0px;
+	position: relative;
+	top: 2px;
+	cursor: pointer;
 }
 #zavrit{
 	position: absolute;

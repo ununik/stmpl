@@ -149,3 +149,11 @@ function kinesiotapingPart(click, part){
 	document.getElementById('postava').style.backgroundImage = "url(/images/kinesiotaping/part/"+part+".png)";
 	window.history.pushState("object or string", "Title", "/kinesiotaping/"+part);
 }
+function zajimavosti_roll_out(id){
+	div = document.getElementById(id);
+	if(div.style.height != "auto"){
+		div.style.height = "auto"
+	}else{
+		div.style.height = "0px"
+	}
+}
