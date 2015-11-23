@@ -30,38 +30,16 @@ $container .= "<div id='uvod' class='kinesiotaping_part'>";
 	$container .= "<h2>Kinesiotaping úvod</h2>";
 	$container .= "<p>Kinesiotaping [ <i>kineziotejping</i> ] je fyzioterapeutická metoda vhodná pro sportovce bez narušení sportovních aktivit. Její hlavní a jedinou pomůckou je kinesiotape. Tato bavlněná páska lze natáhnout až na 160% své délky.</p>
 					<p>Aplikací kinesiotapu nelze v naprosté většině nijak uškodit, proto se nemusí bát ani méně zkušený člověk.</p>";
-	
-	$container .= "<span class='fb-like'
-                        data-href='{$www}/kinesiotaping'
-                        data-layout='standard'
-                        data-action='like'
-                        data-show-faces='true'
-                        data-share='true'>
-   					</div>";
-$container .= "</span>";
+
 
 $container .= "<div id='noha' class='kinesiotaping_part'>";
 	$container .= "<h2>Kinesiotaping nohou a kotníků</h2>";
 	
-$container .= "<span class='fb-like'
-	data-href='{$www}/kinesiotaping/noha'
-	data-layout='standard'
-	data-action='like'
-	data-show-faces='true'
-	data-share='true'>
-	</span>";
 $container .= "</div>";
 	
 $container .= "<div id='holen' class='kinesiotaping_part'>";
 $container .= "<h2>Kinesiotaping holeně</h2>";
 
-$container .= "<span class='fb-like'
-	data-href='{$www}/kinesiotaping/holen'
-	data-layout='standard'
-	data-action='like'
-	data-show-faces='true'
-	data-share='true'>
-	</span>";
 $container .= "</div>";
 
 // KOLENO
@@ -88,110 +66,47 @@ $container .= "<h2>Kinesiotaping kolene</h2>";
 					</p>
 			";
 	
-	
-$container .= "<span class='fb-like'
-	data-href='{$www}/kinesiotaping/koleno'
-	data-layout='standard'
-	data-action='like'
-	data-show-faces='true'
-	data-share='true'>
-	</span>";
+
 $container .= "</div>";
 
 $container .= "<div id='stehno' class='kinesiotaping_part'>";
 $container .= "<h2>Kinesiotaping stehen</h2>";
 
-$container .= "<span class='fb-like'
-	data-href='{$www}/kinesiotaping/stehno'
-	data-layout='standard'
-	data-action='like'
-	data-show-faces='true'
-	data-share='true'>
-	</span>";
 $container .= "</div>";
 
 $container .= "<div id='bricho' class='kinesiotaping_part'>";
 $container .= "<h2>Kinesiotaping břicha a hrudníku</h2>";
 
-$container .= "<span class='fb-like'
-	data-href='{$www}/kinesiotaping/bricho'
-	data-layout='standard'
-	data-action='like'
-	data-show-faces='true'
-	data-share='true'>
-	</span>";
 $container .= "</div>";
 
 $container .= "<div id='rameno' class='kinesiotaping_part'>";
 $container .= "<h2>Kinesiotaping ramene</h2>";
 
-$container .= "<span class='fb-like'
-	data-href='{$www}/kinesiotaping/rameno'
-	data-layout='standard'
-	data-action='like'
-	data-show-faces='true'
-	data-share='true'>
-	</span>";
 $container .= "</div>";
 
 $container .= "<div id='ruka' class='kinesiotaping_part'>";
 $container .= "<h2>Kinesiotaping rukou</h2>";
 
-$container .= "<span class='fb-like'
-	data-href='{$www}/kinesiotaping/ruka'
-	data-layout='standard'
-	data-action='like'
-	data-show-faces='true'
-	data-share='true'>
-	</span>";
 $container .= "</div>";
 
 $container .= "<div id='lytko' class='kinesiotaping_part'>";
 $container .= "<h2>Kinesiotaping lýtek a achilovek</h2>";
 
-$container .= "<span class='fb-like'
-	data-href='{$www}/kinesiotaping/lytko'
-	data-layout='standard'
-	data-action='like'
-	data-show-faces='true'
-	data-share='true'>
-	</span>";
 $container .= "</div>";
 
 $container .= "<div id='zada' class='kinesiotaping_part'>";
 $container .= "<h2>Kinesiotaping zad</h2>";
 
-$container .= "<span class='fb-like'
-	data-href='{$www}/kinesiotaping/zada'
-	data-layout='standard'
-	data-action='like'
-	data-show-faces='true'
-	data-share='true'>
-	</span>";
 $container .= "</div>";
 
 $container .= "<div id='krk' class='kinesiotaping_part'>";
 $container .= "<h2>Kinesiotaping krku</h2>";
 
-$container .= "<span class='fb-like'
-	data-href='{$www}/kinesiotaping/krk'
-	data-layout='standard'
-	data-action='like'
-	data-show-faces='true'
-	data-share='true'>
-	</span>";
 $container .= "</div>";
 
 $container .= "<div id='oblicej' class='kinesiotaping_part'>";
 $container .= "<h2>Kinesiotaping obličeje</h2>";
 
-$container .= "<span class='fb-like'
-data-href='{$www}/kinesiotaping/oblicej'
-data-layout='standard'
-data-action='like'
-data-show-faces='true'
-data-share='true'>
-</span>";
 $container .= "</div>";
 
 if(isset($_GET['part']) && $_GET['part'] != ""){
