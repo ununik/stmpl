@@ -2,7 +2,7 @@
 $container = "<h1>Kinesiotaping</h1>";
 $container .= '<img src="/images/kinesiotaping/postava_zaklad.png" id="postava" usemap="#bodyMap" width="506px" height="501px">';
 $container .= '<map name="bodyMap">
-				  <area shape="poly" coords="115,39,117,54,123,77,137,83,152,77,156,64,159,44,158,39" title="Obličej" onclick="kinesiotapingPart(this, \'oblicej\')">
+				  <area shape="poly" coords="115,39,117,54,123,77,137,83,152,77,156,64,159,44,158,39" id="test" title="Obličej" onclick="kinesiotapingPart(this, \'oblicej\')">
 				  <area shape="poly" coords="125,450,110,495,180,495,145,450" title="Noha" onclick="kinesiotapingPart(this, \'noha\')">
 				  <area shape="poly" coords="110,450,100,395,190,395,170,450" title="Holeň"  onclick="kinesiotapingPart(this, \'holen\')">
 				  <area shape="poly" coords="105,385,105,340,175,340,175,385" title="Koleno"  onclick="kinesiotapingPart(this, \'koleno\')">
@@ -111,12 +111,14 @@ $container .= "</div>";
 
 if(isset($_GET['part']) && $_GET['part'] != ""){
 	$part = $_GET['part'];
-	$container .= "<script>document.getElementById('$part').style.display = \"block\";
-						document.getElementById('postava').style.backgroundImage = 'url(/images/kinesiotaping/part/$part.png)';
+	$container .= "<script>
+			all = document.getElementById('test')
+			kinesiotapingPart(all, \'uvod\')
 								</script>";
 	
 }else{
-	$container .= "<script>document.getElementById('uvod').style.display = \"block\";
+	$container .= "<script>all = document.getElementById('test')
+			kinesiotapingPart(all, \'uvod\')
 	</script>";
 }
 

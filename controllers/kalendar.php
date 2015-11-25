@@ -5,15 +5,27 @@
  * Date: 26.10.2015
  * Time: 9:30
  */
-$dny_nazev = ['Po', 'Út', 'St', 'Čt', 'Pá', 'So', 'Ne'];
-$mesice_nazev = ['leden', 'únor', 'březen', 'duben', 'květen', 'červen', 'červenec', 'srpen', 'září', 'říjen', 'listopad', 'prosinec'];
-$mesice_nazev_genitiv = ['ledna', 'února', 'března', 'dubna', 'května', 'června', 'července', 'srpna', 'září', 'října', 'listopadu', 'prosinece'];
+switch($lang){
+	case "en":
+		$dny_nazev = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+		$mesice_nazev = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+		$mesice_nazev_genitiv = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+		$title = 'Calendar';
+		break;
+	default:
+		$mesice_nazev = ['leden', 'únor', 'březen', 'duben', 'květen', 'červen', 'červenec', 'srpen', 'září', 'říjen', 'listopad', 'prosinec'];
+		$mesice_nazev_genitiv = ['ledna', 'února', 'března', 'dubna', 'května', 'června', 'července', 'srpna', 'září', 'října', 'listopadu', 'prosinece'];
+		$dny_nazev = ['Po', 'Út', 'St', 'Čt', 'Pá', 'So', 'Ne'];
+		$title = 'Kalendář';
+		break;
+}
+
 if(!isset($_GET['timestamp']) || $_GET['timestamp'] == ""){
     $timestamp = time();
 }else{
     $timestamp = $_GET['timestamp'];
 }
-$title = 'Kalendář';
+
 $today = strtotime('today', time());
 $firstday_timestamp = strtotime(date('Y-m-01', $timestamp));
 $lastday_timestamp = strtotime('next month', $firstday_timestamp) - 1 ;
@@ -43,5 +55,11 @@ foreach($kalendar as $kalendar){
         $from += 86400;
     }
 }
-
-return include_once('views/kalendar-page.php');
+switch($lang){
+	case "en":
+		return include_once('views/kalendar-page-en.php');
+		break;
+	default:
+		return include_once('views/kalendar-page.php');
+		break;
+}

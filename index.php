@@ -14,7 +14,11 @@ if($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['HTTP_HOST'] == '127.0.0.1')
     $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 }
 $title = null;
-
+if(isset($_COOKIE['languageStMpL'])){
+	$lang = $_COOKIE['languageStMpL'];
+}else{
+	$lang = "cz";
+}
 function __autoload($name){
     include ("methods/$name.class.php");
 }
@@ -31,11 +35,23 @@ if(isset($_GET['page']) && $_GET['page']){
 
 $data->setNavigation(include_once("controllers/navigation.php"));
 if($getPage == "home"){
-    $data->setHeader("<div id='header_home'><div><h1>Biatlon v srdci České Kanady</h1></div></div><div id='headerbox'>
+	switch($lang){
+		case "en":
+			$data->setHeader("<div id='header_home'><div><h1>Biathlon at the heart of the Czech Canada</h1></div></div><div id='headerbox'>
+                      <h1>Staré Město pod Landštejnem<br>biathlon club</h1>
+                      <h2>club from the heart of the Czech Canada</h2>
+                      <div id='photoBoxAll'></div>
+                      </div>");
+			break;
+		default:
+			$data->setHeader("<div id='header_home'><div><h1>Biatlon v srdci České Kanady</h1></div></div><div id='headerbox'>
                       <h1>Klub biatlonu<br>Staré Město pod Landštejnem</h1>
                       <h2>klub ze srdce České Kanady</h2>
                       <div id='photoBoxAll'></div>
                       </div>");
+			break;
+	}
+    
 }else{
     $data->setHeader("<div id='header_all'>Staré Město pod Landštejnem</div>");
 }

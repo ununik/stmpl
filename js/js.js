@@ -144,11 +144,15 @@ function kinesiotapingPart(click, part){
 	for(i=0; i < allDIV.length; i++){
 		allDIV[i].style.display = "none";
 	}
-	document.getElementById(part).style.display = "block";
+	var div = document.getElementById(part);
+	div.style.display = "block";
+	
+	alert(div.innerHTML);
 	document.title = click.title + ' | Kinesiotaping | Staré Město pod Landštejnem' ;
 	document.getElementById('postava').style.backgroundImage = "url(/images/kinesiotaping/part/"+part+".png)";
 	window.history.pushState("object or string", "Title", "/kinesiotaping/"+part);
 }
+
 function zajimavosti_roll_out(id){
 	div = document.getElementById(id);
 	if(div.style.height != "auto"){
@@ -156,4 +160,9 @@ function zajimavosti_roll_out(id){
 	}else{
 		div.style.height = "0px"
 	}
+}
+
+function changeLanguage(lang){
+	document.cookie="languageStMpL="+lang;
+	location.reload();
 }

@@ -364,7 +364,7 @@ iframe{
     float:right;
     height: 88%;
     margin-top: 2px;
-    margin-right: 25px;
+    margin-right: 15px;
 }
 #footer{
     background-color: #cd1d1d;
@@ -798,7 +798,7 @@ iframe{
 	width: 720px;
 }
 .kinesiotaping_part{
-	display: none;
+	/*display: none;*/
 }
 .kinesiotaping_part h2{
 	margin: 0px;
@@ -809,6 +809,9 @@ iframe{
 .kinesiotaping_part p{
 	margin: 10px 0px 8px 10px;
 	text-align: justify;
+}
+.language{
+	float: right;
 }
 .admin_calendar_table td{
     vertical-align: top;
@@ -858,6 +861,18 @@ iframe{
 .today:hover{
     background-color: rgba(29, 117, 205,0.6) !important;
 }
+.translation{
+	cursor: pointer;
+	margin: 8px 18px 0px 0px; 
+}
+.translation img{
+	height: 25px;
+	border: 1px solid white;
+	border-radius: 3px;
+}
+.translation:hover img{
+	border: 1px solid #E17777;
+}
 .zajimavosti{
 	margin: 35px 0px 0px 0px;
 }
@@ -895,4 +910,7 @@ iframe{
 	right: 0px;
 	margin: 15px;
 	cursor: pointer;
+}
+#photoBoxAll .eq{
+	display: none;
 }
